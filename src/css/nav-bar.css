@@ -1,0 +1,105 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 24px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(32px);
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo-name,
+.nav-links {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-links {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-links.active {
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #401A89;
+    color: #FFFFFF;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo-menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        width: 100%;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+        backdrop-filter: blur(32px);
+        animation: slideDown 0.5s ease;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-links.active,
+    .nav-links.join-room {
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-2.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
