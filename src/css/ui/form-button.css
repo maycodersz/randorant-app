@@ -1,0 +1,10 @@
+.form-button {
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #401A89;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}

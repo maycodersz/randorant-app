@@ -1,0 +1,80 @@
+.create-room,
+.join-room {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 10%;
+}
+
+.create-room-form,
+.join-room-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-redirect {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #401A89;
+}
+
+@media (min-width: 1201px) {
+
+    .create-room,
+    .join-room {
+        padding: 6rem 15%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .create-room,
+    .join-room {
+        flex-direction: column;
+        padding: 5rem 5%;
+        gap: 3rem;
+    }
+
+    .create-room-form,
+    .join-room-form {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .create-room,
+    .join-room {
+        padding: 4rem 2rem;
+        gap: 2.5rem;
+        min-height: 85vh;
+    }
+
+    .create-room-form,
+    .join-room-form {
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 412px) {
+
+    .create-room,
+    .join-room {
+        padding: 3rem 1rem;
+        gap: 2rem;
+        min-height: 80vh;
+    }
+
+    .create-room-form,
+    .join-room-form {
+        gap: 1rem;
+    }
+}

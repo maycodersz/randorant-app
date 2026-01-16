@@ -1,0 +1,22 @@
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333333;
+    text-align: center;
+}
+
+.form-icon {
+    font-size: 6rem;
+    color: #401A89;
+}
+
+.form-title {
+    font-size: 2rem;
+}
+
+.form-description {
+    width: 80%;
+    font-size: 1rem;
+}

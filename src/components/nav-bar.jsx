@@ -23,7 +23,7 @@ export default function NavBar() {
             </div>
             <nav className={menuVisibility ? "active" : ""}>
                 <HashLink smooth to="/#how-it-works" className="nav-links">How It Works</HashLink>
-                <Link to="/join-room" className="nav-links join-room">Join Room</Link>
+                <Link to="/join-room" className="nav-links nav-join-room">Join Room</Link>
                 <Link to="/create-room" className="nav-links active">Create Room</Link>
             </nav>
         </header>

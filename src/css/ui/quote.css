@@ -1,0 +1,90 @@
+.quote-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #333333;
+}
+
+.quote-icon {
+    font-size: 6rem;
+    color: #333333;
+}
+
+.quote-container h1 {
+    font-size: 2rem;
+}
+
+.quote-container p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1201px) {
+    .quote-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .quote-container p {
+        font-size: 1.75rem;
+    }
+
+    .quote-icon {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .quote-container {
+        width: 100%;
+        max-width: 600px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .quote-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .quote-container p {
+        font-size: 1.25rem;
+    }
+
+    .quote-icon {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .quote-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .quote-container p {
+        font-size: 1.125rem;
+        line-height: 1.6;
+    }
+
+    .quote-icon {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .quote-container {
+        gap: 1rem;
+    }
+
+    .quote-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .quote-container p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .quote-icon {
+        font-size: 3rem;
+    }
+}
