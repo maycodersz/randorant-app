@@ -13,12 +13,13 @@ export default function FormSwitch({ router = "create-room", label }) {
 
     return (
         <div className="form-switch-container">
-            <label className="form-switch-label">{label}</label>
+            <label className="form-switch-label" for="form-switch">{label}</label>
             <label className="switch">
                 <input
                     type="checkbox"
                     checked={isChecked}
                     onChange={handleChange}
+                    id="form-switch"
                 />
                 <span className={`slider ${isChecked ? "checked" : ""}`}>
                     <div className={`slider-icon-container ${isChecked ? "checked" : ""}`}>
