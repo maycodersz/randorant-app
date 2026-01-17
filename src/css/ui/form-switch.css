@@ -68,3 +68,21 @@
 input:focus+.slider {
     box-shadow: 0 0 1px #401A89;
 }
+
+@media (min-width: 1201px) {
+    .form-switch-label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .form-switch-label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .form-switch-label {
+        font-size: 0.75rem;
+    }
+}

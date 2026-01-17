@@ -22,7 +22,7 @@ export default function NavBar() {
                 <button className="hamburger-menu" onClick={toggleMenu}>{menuVisibility ? (<RxCross1 className="hamburger-icon" />) : (<GiHamburgerMenu className="hamburger-icon" />)}</button>
             </div>
             <nav className={menuVisibility ? "active" : ""}>
-                <HashLink smooth to="/#how-it-works" className="nav-links">How It Works</HashLink>
+                <HashLink smooth to="/randorant-app#how-it-works" className="nav-links">How It Works</HashLink>
                 <Link to="/join-room" className="nav-links nav-join-room">Join Room</Link>
                 <Link to="/create-room" className="nav-links active">Create Room</Link>
             </nav>
